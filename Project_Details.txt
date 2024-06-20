@@ -1,0 +1,104 @@
+                                     Instagram Clone
+                                     ================
+ step-1:
+ ========
+ Here we Vite.js to build react application because vite.js make the server faster loading by dividibng the application into 2 parts
+          1.Dependecies
+          2.Source code
+
+How to install
+===============
+npm create vite@latest
+project name : Insta-Clone
+select a framework : react
+select a variant : javascript
+
+done ,now run
+cd insta-Clone
+npm install
+npm run dev
+
+step-2:
+========
+Here i used Chakra-ui for building component because Chakra ui provides less code,more speed to application.
+
+How to install
+===============
+npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
+
+To use Chakra-ui we need to setup ChakraProvider in main.jsx
+syntax:
+========
+first import
+import { ChakraProvider, } from '@chakra-ui/react';
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    {/* overwite the them */}
+    <ChakraProvider theme={theme}>
+      <App />
+    </ChakraProvider>
+  </React.StrictMode>,
+);
+
+1.configure body background color
+====================================
+import {  extendTheme } from '@chakra-ui/react';
+import { mode } from '@chakra-ui/theme-tools';
+
+//configure style object for styling body
+//global is the void function used to set the value according to them
+//body is the key of style
+//set on light mode use gray.100 / dark mode
+//on light mode color gray.800 / on dark mode color whiteAlpha.900
+const styles = {
+  global: (props) => ({
+    body: {
+      bg: mode("gray.100", "gray.900")(props), // Corrected 'dark' to 'gray.900' as 'dark' is not a valid color
+      color: mode("gray.800", "whiteAlpha.900")(props),
+    },
+  }),
+};
+
+// 2. Add your color mode config
+const config = {
+  initialColorMode: 'dark',
+  useSystemColorMode: false,
+};
+
+// 3. Extend the theme
+const theme = extendTheme({ config, styles });
+
+step-3:
+========
+Install react icons and Routers
+
+How to install
+===============
+npm install react icons
+npm install react-router-dom
+
+to use router:
+================
+import { BrowserRouter } from 'react-router-dom';
+<BrowserRouter>
+  ..codes
+</BrowserRouter>
+
+step-4:
+=========
+-Here design components 
+
+
+All Components:
+===============
+<AuthPageComponent/>
+<AuthFormComponent/>
+<SidebarComponent/>
+<HomePageComponent/>
+<PageLayoutComponent/>
+<FeedPostsComponent/>
+<FeedPostComponent/>
+<FeedPostHeaderComponent/>
+<FeedPostFooterComponent/>
+<All icons Components/>
