@@ -8,7 +8,7 @@ function AuthPageComponent() {
         <Container maxW="container.md" padding={0}>
             <Flex justifyContent={"center"} alignItems={"center"} >
                 {/* Left-handside component */}
-                <Box display={{base:"none", md:"block"}}  >
+                <Box display={{base:"none", md:"block"}}m={0}>
                     <Image src='https://freepngimg.com/thumb/marketing/70806-development-instagram-mobile-marketing-app-iphone-user.png' borderRadius={20} h={600} alt='mobile image' />
                 </Box>
                 
