@@ -4,7 +4,7 @@ This project is an Instagram clone application built using React, Vite, Firebase
 
 ## Table of Contents
 
-- [Demo](#demo)
+- [https://instagram-clone-56463.web.app](#demo)
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -15,7 +15,7 @@ This project is an Instagram clone application built using React, Vite, Firebase
 
 ## Demo
 
-[Link to live demo](https://your-live-demo-link.com)
+[Link to live demo](https://instagram-clone-56463.web.app)
 
 ## Features
 
