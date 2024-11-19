@@ -8,7 +8,7 @@ function useSignUpWithEmailPassword() {
   const [createUserWithEmailAndPassword, user, loading, error] = useCreateUserWithEmailAndPassword(auth);
    const showToasta = useShowToasta();
     // configure state for state management technique
-      const userLogin=useAuthStore(state=>state.login);
+      const userLogin =useAuthStore(state=>state.login);
 
   const signUp = async (inputs) => {
     if (!inputs.email || !inputs.password || !inputs.username || !inputs.fullName) {
